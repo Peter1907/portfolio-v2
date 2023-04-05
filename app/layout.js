@@ -1,4 +1,4 @@
-import { Montserrat, Cutive, Saira_Semi_Condensed } from 'next/font/google';
+import { Montserrat, Cutive_Mono, Saira_Semi_Condensed } from 'next/font/google';
 import { Navbar } from './Navbar';
 import './globals.css';
 import Social from './Social';
@@ -9,7 +9,7 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-const cutive = Cutive({
+const cutive = Cutive_Mono({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-cutive',

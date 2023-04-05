@@ -3,7 +3,7 @@ import { faAngellist, faGithub, faLinkedinIn, faMedium } from '@fortawesome/free
 
 export default function Social() {
   return (
-    <section className="fixed hidden z-20 text-gray-400 lg:block">
+    <section className="fixed hidden z-20 text-gray-400 md:block">
       <div className="links flex flex-col items-center gap-4 fixed bottom-0 left-6">
         <a href="https://github.com/Peter1907">
           <FontAwesomeIcon
@@ -33,9 +33,12 @@ export default function Social() {
       </div>
       <div className="email flex flex-col items-center gap-4 fixed top-20 right-6">
         <p className="vertical-line h-[10vh] border-r border-gray-400" />
-        <p
+        <a
+          href="mailto:peter.nady.1408@gmail.com"
           className="cursor-pointer w-5 -rotate-90 mt-[11.5rem] hover:mt-[11.8rem] hover:text-aqua/80 transition-all duration-200"
-        >peter.nady.1408@gmail.com</p>
+        >
+          peter.nady.1408@gmail.com
+        </a>
       </div>
     </section>
   );

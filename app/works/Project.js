@@ -24,7 +24,7 @@ export const Project = ({ project }) => {
         <div className="flex flex-wrap lg:ml-2">
           {project.tags.map((tag, i) => (
             <div key={tag}>
-              <span className="text-aqua text-[10px] leading-5 font-cutive py-1 px-2 rounded">
+              <span className="text-aqua text-sm font-cutive py-1 px-2 rounded">
                 {tag}
               </span>
               {(i !== project.tags.length - 1) && <span>|</span>}
