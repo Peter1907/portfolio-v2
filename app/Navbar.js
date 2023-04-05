@@ -9,7 +9,7 @@ const NavLink = ({ href, slug, children }) => {
 
   return (
   <Link href={href}
-    className={`cursor-pointer hover:underline hover:text-aqua ${isActive ? 'text-aqua underline font-bold' : ''}`}
+    className={`cursor-pointer hover:underline hover:text-aqua ${isActive ? 'text-aqua font-bold' : ''}`}
   >
     {children}
   </Link>
