@@ -5,7 +5,7 @@ export default function Home() {
         className="font-montserrat font-semibold text-5xl lg:text-[8rem]"
       >
         My portfolio
-        </p>
+      </p>
     </div>
   )
 }

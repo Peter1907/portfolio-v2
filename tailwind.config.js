@@ -17,6 +17,7 @@ module.exports = {
       fontFamily: {
         montserrat: ['var(--font-montserrat)'],
         cutive: ['var(--font-cutive)'],
+        saira: ['var(--font-saira)'],
       }
     },
   },
