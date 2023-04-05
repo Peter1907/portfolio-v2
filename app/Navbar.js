@@ -1,14 +1,38 @@
+'use client';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useSelectedLayoutSegment } from 'next/navigation';
+
+const NavLink = ({ href, slug, children }) => {
+  const segment = useSelectedLayoutSegment();
+  const isActive = slug === segment;
+
+  return (
+  <Link href={href}
+    className={`cursor-pointer hover:underline hover:text-aqua ${isActive ? 'text-aqua underline font-bold' : ''}`}
+  >
+    {children}
+  </Link>
+  )
+};
 
 export const Navbar = () => (
-  <header className="sticky px-4 inset-x-0 top-0 bg-rich-black text-snow shadow-md shadow-snow/10 h-20 z-40 flex items-center justify-center xl:px-0">
+  <header className="fixed px-4 inset-x-0 top-0 bg-rich-black text-snow shadow-md shadow-snow/10 h-20 z-40 flex items-center justify-center xl:px-0">
     <div className="container max-w-[1100px] flex justify-between items-center">
       <Image src="/logo-2.svg" width={48} height={48} alt="logo" />
-      <ul className="flex gap-4 font-cutive mt-2 text-sm">
-        <li className="cursor-pointer hover:underline hover:text-aqua">HOME</li>
-        <li className="cursor-pointer hover:underline hover:text-aqua">WORKS</li>
-        <li className="cursor-pointer hover:underline hover:text-aqua">ABOUT</li>
-        <li className="cursor-pointer hover:underline hover:text-aqua">CONTACT</li>
+      <ul className="flex gap-4 font-cutive mt-2 text-xs">
+        <li>
+          <NavLink slug={null} href="/">HOME</NavLink>
+        </li>
+        <li>
+          <NavLink slug="works" href="/works">PROJECTS</NavLink>
+        </li>
+        <li>
+          <NavLink slug="about" href="#">ABOUT</NavLink>
+        </li>
+        <li>
+          <NavLink slug="contact" href="#">CONTACT</NavLink>
+        </li>
       </ul>
     </div>
   </header>
