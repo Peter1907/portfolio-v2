@@ -1,6 +1,7 @@
 import { Montserrat, Cutive, Saira_Semi_Condensed } from 'next/font/google';
 import { Navbar } from './Navbar';
 import './globals.css';
+import Social from './Social';
 
 const montserrat = Montserrat({
   weight: ['400', '600', '700'],
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${montserrat.variable} ${cutive.variable} ${saira.variable}`}>
       <body>
         <Navbar />
+        <Social />
         {children}
       </body>
     </html>
