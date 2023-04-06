@@ -47,7 +47,7 @@ export default function Social() {
         </a>
         <p className="vertical-line h-[10vh] border-r border-gray-400" />
       </div>
-      <div className="email flex flex-col items-center gap-4 fixed top-20 right-6">
+      <div className="email flex flex-col items-center gap-4 fixed top-16 right-6">
         <p className="vertical-line h-[10vh] border-r border-gray-400" />
         <a
           href="mailto:peter.nady.1408@gmail.com"
