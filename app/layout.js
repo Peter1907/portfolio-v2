@@ -16,7 +16,7 @@ const cutive = Cutive_Mono({
 });
 
 const saira = Saira_Semi_Condensed({
-  weight: ['400', '600', '700'],
+  weight: ['300', '400', '600', '700'],
   subsets: ['latin'],
   variable: '--font-saira',
 });
