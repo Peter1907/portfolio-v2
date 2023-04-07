@@ -1,18 +1,11 @@
 import Image from 'next/image';
+import Circles from './circles';
 
 export default function About() {
   return (
     <main className="overflow-x-hidden pt-24 flex flex-col lg:justify-center text-snow absolute inset-0 h-screen">
       <div className="background top-0 fixed w-screen h-screen bg-no-repeat bg-gradient-to-br from-rich-black from-40% to-onyx z-0" />
-      <div className="image-container overflow-hidden fixed inset-0">
-        <Image
-          src="/circles02.png"
-          width={700}
-          height={700}
-          alt="circles illustration"
-          className="absolute bottom-[5%] lg:bottom-auto lg:top-[15%] left-[10%] opacity-60 z-0 filter blur-[2px]"
-        />
-      </div>
+      <Circles />
       <section id="info" className="w-[90%] md:w-[85%] lg:w-[60%] lg:self-end self-center relative flex flex-col gap-4">
         <p className="pl-1 font-cutive md:text-lg lg:text-xl leading-4">
           HEY THERE!<br />MY NAME IS
