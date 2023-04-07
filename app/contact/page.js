@@ -27,7 +27,7 @@ export default function Contact() {
             name="Name"
             type="text"
             placeholder="Name"
-            maxlength="30"
+            maxLength="30"
             className="bg-snow px-4 py-2 focus:ring-aqua/80 focus:outline-none focus:ring-2 text-rich-black w-full"
             required
           />
@@ -43,7 +43,7 @@ export default function Contact() {
             id="message"
             name="Message"
             placeholder="Enter text here"
-            maxlength="5000"
+            maxLength="5000"
             className="bg-snow px-4 py-2 h-28 focus:ring-aqua/80 focus:outline-none focus:ring-2 text-rich-black w-full"
             required
           />
