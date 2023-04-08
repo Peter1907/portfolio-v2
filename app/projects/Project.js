@@ -68,7 +68,6 @@ const Info = ({ id, title, description, tags, source, live_demo }) => (
         <FontAwesomeIcon
           className="cursor-pointer hover:text-aqua hover:mb-0.5 hover:-mt-0.5 transition-all duration-200 w-5"
           icon={faArrowUpRightFromSquare}
-          fade
         />
       </a>
     </div>

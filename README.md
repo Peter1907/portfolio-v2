@@ -1,38 +1,108 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="readme-top"></a>
 
-## Getting Started
+<div align="center">
+  <img src="./public/logo-2.svg" alt="logo" width="120"  height="auto" />
+  <br/>
+</div>
 
-First, run the development server:
+# 📗 Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [📝 License](#license)
+
+
+# 📖 [My Portfolio] <a name="about-project"></a>
+
+**Welcome to my portfolio!**  As a full stack web developer, I create modern web applications with stunning user interfaces and robust back-end functionality. Browse through my projects to see the diverse range of web applications I've developed. If you have any questions or would like to discuss potential collaborations, please don't hesitate to reach out. Thank you for visiting my portfolio!
+
+## 🛠 Built With <a name="built-with"></a>
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+<img src="https://github.com/get-icon/geticon/raw/master/icons/gsap.svg" alt="GSAP" width="30" height="auto">
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- node & npm installed
+- Any terminal & code editor
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone git@github.com:Peter1907/portfolio-v2.git
+```
+Or download the [zip](https://github.com/Peter1907/portfolio-v2/archive/refs/heads/dev.zip) file 
+
+### Install
+
+Install this project with:
+
+- In the terminal, navigate to the repository directory (where you downloaded it)
+```sh
+  cd my-project
+```
+- Install dependencies
+```sh
+  npm i
+```
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm run dev
+```
+You can specify the port following this example:
+```sh
+  PORT=3002 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Live Demo <a name="live-demo"></a>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- [Live Demo Link](https://google.com)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🤝 Contributing <a name="contributing"></a>
 
-## Learn More
+Contributions, issues, and feature requests are welcome!
 
-To learn more about Next.js, take a look at the following resources:
+Feel free to check the [issues page](https://github.com/Peter1907/portfolio-v2/issues).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ⭐️ Show your support <a name="support"></a>
 
-## Deploy on Vercel
+If you like this project, leave star or share
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+You can use parts of the code with attribution.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
