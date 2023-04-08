@@ -4,7 +4,7 @@ import { faAngellist, faGithub, faLinkedinIn, faMedium } from '@fortawesome/free
 export default function Social() {
   return (
     <section className="fixed hidden z-20 text-gray-400 md:block">
-      <div className="links flex flex-col items-center gap-4 fixed bottom-0 left-6">
+      <div className="links flex flex-col items-center gap-3 fixed bottom-0 left-6">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -12,7 +12,8 @@ export default function Social() {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className="w-5 hover:mb-1 hover:-mt-1 hover:text-aqua/80 transition-all duration-200"
+            size="lg"
+            className="hover:mb-1 hover:-mt-1 hover:text-aqua/80 transition-all duration-200"
           />
         </a>
         <a
@@ -22,7 +23,8 @@ export default function Social() {
         >
           <FontAwesomeIcon
             icon={faLinkedinIn}
-            className="w-5 hover:mb-1 hover:-mt-1 hover:text-aqua/80 transition-all duration-200"
+            size="lg"
+            className="hover:mb-1 hover:-mt-1 hover:text-aqua/80 transition-all duration-200"
           />
         </a>
         <a
@@ -32,7 +34,8 @@ export default function Social() {
         >
           <FontAwesomeIcon
             icon={faAngellist}
-            className="w-5 hover:mb-1 hover:-mt-1 hover:text-aqua/80 transition-all duration-200"
+            size="lg"
+            className="hover:mb-1 hover:-mt-1 hover:text-aqua/80 transition-all duration-200"
           />
         </a>
         <a
@@ -42,7 +45,8 @@ export default function Social() {
         >
           <FontAwesomeIcon
             icon={faMedium}
-            className="w-5 hover:mb-1 hover:-mt-1 hover:text-aqua/80 transition-all duration-200"
+            size="lg"
+            className="hover:mb-1 hover:-mt-1 hover:text-aqua/80 transition-all duration-200"
           />
         </a>
         <p className="vertical-line h-[10vh] border-r border-gray-400" />
