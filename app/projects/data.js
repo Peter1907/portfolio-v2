@@ -37,8 +37,21 @@ export const projectData = [
       more categories, providing flexibility in tracking expenses across different \
       types of categories, and analyze expenses by category.',
     image: '/br01.jpg',
-    tags: ['Ruby on Rails', 'MVC', 'Haml', 'PostgreSQL', 'Tailwind', 'RSpec'],
+    tags: ['Ruby on Rails', 'MVC', 'Haml', 'PostgreSQL', 'Tailwind', 'RSpec', 'Ruby gems'],
     source: 'https://github.com/Peter1907/blue-ray-pay',
     live_demo: 'https://github.com/Peter1907/blue-ray-pay',
+  },
+  {
+    id: 4,
+    title: 'Recipe App',
+    description:
+      'A Full-Stack application resembling a recipe app, With an easy-to-use interface, \
+      users can create accounts, log in, and start adding their favorite recipes. \
+      The app allows users to categorize recipes based on different types of food, \
+      and generate a shopping list for each recipe.',
+    image: '/r01.jpg',
+    tags: ['Ruby on Rails', 'MVC', 'PostgreSQL', 'Tailwind', 'RSpec', 'Ruby gems'],
+    source: 'https://github.com/Peter1907/recipe-app',
+    live_demo: 'https://github.com/Peter1907/recipe-app',
   },
 ];
