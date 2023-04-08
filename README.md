@@ -31,6 +31,7 @@
 ![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 <img src="https://github.com/get-icon/geticon/raw/master/icons/gsap.svg" alt="GSAP" width="30" height="auto">
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -81,7 +82,7 @@ You can specify the port following this example:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://peter-beshara.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -13,7 +13,7 @@ const Tumbnail = ({ image, title }) => (
       src={image}
       alt={title}
       width={1000}
-      height={1000}
+      height={500}
       className="filter saturate-[0.35] hover:saturate-100 relative cursor-pointer hover:scale-105 transition-all duration-200 z-10"
     />
   </div>
