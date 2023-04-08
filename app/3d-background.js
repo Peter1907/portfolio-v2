@@ -5,8 +5,8 @@ import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 const Background = () => {
-  const canvasRef = useRef(null);
-  const [info, name, text, btn] = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  const canvasRef = useRef();
+  const [info, name, text, btn] = [useRef(), useRef(), useRef(), useRef()];
   const router = useRouter();
 
   useEffect(() => {
@@ -182,6 +182,9 @@ const Background = () => {
 
       window.removeEventListener('mouseover', normalizeMouse);
       window.removeEventListener('resize', handleResize);
+
+      [canvas.current, info.current, name.current, text.current, btn.current] =
+        [null, null, null, null, null];
     };
   }, []);
 

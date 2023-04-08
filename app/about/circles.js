@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 
 export default function Circles() {
-  const [i1, i2, i3, i4] = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  const [i1, i2, i3, i4] = [useRef(), useRef(), useRef(), useRef()];
 
   const animate = () => {
     gsap.to(i1.current, {
@@ -37,7 +37,8 @@ export default function Circles() {
 
     return () => {
       clearInterval(intervalId);
-    }
+      [i1.current, i2.current, i3.current, i4.current] = [null, null, null, null];
+    };
   }, []);
 
   return (

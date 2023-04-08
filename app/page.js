@@ -6,7 +6,7 @@ import { useEffect, useRef } from 'react';
 
 export default function Home() {
   const [left, right, door, ring, initials] =
-    [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
+    [useRef(), useRef(), useRef(), useRef(), useRef()];
 
   let spin = 0;
   const animate = () => {
@@ -57,6 +57,11 @@ export default function Home() {
       ease: 'power1.in',
       duration: 0.7,
     });
+
+    return () => {
+      [left.current, right.current, door.current, ring.current, initials.current] =
+        [null, null, null, null, null];
+    };
   }, []);
 
   return (
