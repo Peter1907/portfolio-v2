@@ -7,7 +7,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/Peter1907/portfolio-v2"
-        className="text-snow font-cutive text-sm"
+        className="text-snow font-cutive text-sm hover:text-aqua"
       >
         DESIGNED & BUILT BY PETER BESHARA
       </Link>
