@@ -11,7 +11,7 @@ export default function Works() {
         <h1 className="text-3xl lg:text-5xl font-saira font-semibold">
           Featured Projects
         </h1>
-        <p className="border-t border-snow w-[30vw] lg:w-[30vw]" />
+        <p className="border-t border-snow w-[30vw]" />
       </div>
       {projects.map((project) => (
         <Project key={project.id} project={project} />

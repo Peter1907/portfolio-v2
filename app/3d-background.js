@@ -2,9 +2,12 @@
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 import { useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 
 const Background = () => {
   const canvasRef = useRef(null);
+  const [info, name, text, btn] = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  const router = useRouter();
 
   useEffect(() => {
     // Create Mesh which needs Geometry & Material
@@ -46,9 +49,9 @@ const Background = () => {
     // Set camera & Lights
     const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 1000);
     camera.position.z = 40;
-    const light = new THREE.DirectionalLight(0xffffff, 1);
+    const light = new THREE.DirectionalLight(0xffffff, 0.8);
     light.position.set(0, -8, 10);
-    const backLight = new THREE.DirectionalLight(0xffffff, 1);
+    const backLight = new THREE.DirectionalLight(0xffffff, 0.8);
     backLight.position.set(0, 8, -10);
 
     // Stars
@@ -143,6 +146,26 @@ const Background = () => {
     };
     window.addEventListener('resize', handleResize);
 
+    // Animation for navigation
+    btn.current.addEventListener('click', () => {
+      gsap.to(info.current, {
+        opacity: 0,
+        duration: 1,
+        onComplete: () => {
+          gsap.to(info.current, { display: 'none' });
+          gsap.to(camera.position, { z: 10, ease: 'Power2.inOut', duration: 1.7 });
+          gsap.to(camera.rotation, { x: 1.57, ease: 'Power2.inOut', duration: 1.7 });
+          gsap.to(camera.position, {
+            y: 1000,
+            ease: 'power4.in',
+            duration: 1,
+            delay: 2,
+            onComplete: () => router.push('/projects'),
+          });
+        },
+      });
+    });
+
     // Cleanup
     return () => {
       [
@@ -162,8 +185,37 @@ const Background = () => {
     };
   }, []);
 
+  useEffect(() => {
+    gsap.from(text.current, { opacity: 0, delay: 5, duration: 0.5 });
+    gsap.from(btn.current, { opacity: 0, delay: 5.5, y: -50, duration: 1, ease: 'bounce' });
+    gsap.from(name.current, { opacity: 0, y: 50, delay: 5.5, duration: 0.5 });
+  }, []);
+
   return (
-    <section className="text-snow flex items-center justify-center h-screen">
+    <section className="text-snow text-center flex items-center justify-center h-screen">
+      <div ref={info} className="intro cursor-default z-40 flex flex-col gap-2 items-center">
+        <h3
+          ref={name}
+          className="font-cutive text-lg md:text-xl lg:text-2xl leading-4 mt-2 backdrop-blur-sm"
+        >
+          PETER BESHARA
+        </h3>
+        <div className="text" ref={text}>
+          <p className="font-semibold max-w-lg md:max-w-xl lg:max-w-2xl px-2 font-saira text-3xl md:text-4xl lg:text-5xl">
+            A multidimensional creative mind with a passion for pushing the boundaries of design and technology.
+          </p>
+          <p className="font-saira text-lg md:text-xl lg:text-2xl leading-4 mt-4 backdrop-blur-sm">
+            WELCOME TO MY DIGITAL UNIVERSE!
+          </p>
+        </div>
+        <button
+          type="button"
+          ref={btn}
+          className="font-saira border border-snow/40 text-lg md:text-xl lg:text-2xl mt-2 py-2 px-4 md:py-3 md:px-6 bg-rich-black/80 hover:bg-rich-black active:scale-[0.98]"
+        >
+          Explore
+        </button>
+      </div>
       <canvas ref={canvasRef} className="canvas fixed inset-0 z-30" />
     </section>
   );
