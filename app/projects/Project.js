@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
 
 const isOdd = (num) => (num % 2 === 0 ? false : true);
 
@@ -8,9 +9,11 @@ const Tumbnail = ({ image, title }) => (
   <div className="relative flex-2 mb-4 w-full lg:max-w-[60%]">
     <div className="top-box absolute -top-2 -left-2 h-[80%] w-[70%] bg-aqua z-0" />
     <div className="bottom-box absolute -bottom-2 -right-2 h-[80%] w-[70%] bg-ras z-0" />
-    <img
+    <Image
       src={image}
       alt={title}
+      width={1000}
+      height={1000}
       className="filter saturate-[0.35] hover:saturate-100 relative cursor-pointer hover:scale-105 transition-all duration-200 z-10"
     />
   </div>
