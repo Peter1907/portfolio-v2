@@ -14,8 +14,8 @@ export default function Contact() {
           <p className="border-t border-snow w-[30vw] max-w-[300px]" />
         </div>
         <p className="pl-1 font-montserrat text-center mb-4 md:text-lg leading-6 w-[80%] max-w-[500px]">
-          I'd love to hear from you! Whether you have an opportunity, a project in mind,
-          a question to ask, or just want to say hi, feel free to reach out. I'll get back to you as soon as possible!
+          I&apos;d love to hear from you! Whether you have an opportunity, a project in mind,
+          a question to ask, or just want to say hi, feel free to reach out. I&apos;ll get back to you as soon as possible!
         </p>
         <form
           action="https://formspree.io/f/xknylodz"

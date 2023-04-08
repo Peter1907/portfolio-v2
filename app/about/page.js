@@ -19,16 +19,16 @@ export default function About() {
         </p>
         <p className="font-thin max-w-lg md:max-w-xl lg:max-w-2xl bg-gradient-to-br from-rich-black/50 p-2 lg:mr-8 leading-6 font-saira text-lg md:text-xl">
           I love all things creative. From coding to crafting, I thrive on bringing ideas
-          to life and pushing the boundaries of what's possible for me. I've worked on a number of
+          to life and pushing the boundaries of what&apos;s possible for me. I&apos;ve worked on a number of
           exciting projects both personal & professional, honing my skills across the Front-end & the Back-end.
           My approach is all about blending form and function, creating seamless user experiences
           that leave a lasting impression.
         </p>
         <p className="font-thin max-w-lg md:max-w-xl lg:max-w-2xl bg-gradient-to-br from-rich-black/50 p-2 lg:mr-8 leading-6 font-saira text-lg md:text-xl">
-          When I'm not coding up a strom,
+          When I&apos;m not coding up a strom,
           you can find me reading, working-out, playing Chess or video games.<br />
           I also love to meet new people. So, feel free to contact me,
-          and let's have a conversation!<br />
+          and let&apos;s have a conversation!<br />
         </p>
       </section>
     </main>
