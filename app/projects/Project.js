@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const isOdd = (num) => (num % 2 === 0 ? false : true);
 
@@ -36,11 +37,11 @@ const Info = ({ id, title, description, tags, source, live_demo }) => (
       }
     >
       <p className="leading-6 text-sm lg:text-md">{description}</p>
-      <a
-        href="#"
+      <Link
+        href={`/projects/${id}`}
         className={`font-saira text-aqua hover:underline ${isOdd(id) ? 'self-end' : 'self-start'}`}>
         more about this
-      </a>
+      </Link>
     </div>
     <div className={`flex flex-wrap lg:mx-2 ${!isOdd(id) && 'self-end text-right'}`}>
       {tags.map((tag, i) => (
